@@ -32,6 +32,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
+    console.log(import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY)
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -40,7 +41,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Ayush Raj Anand",
           from_email: form.email,
-          to_email: "f4ayush@gmail.com",
+          to_email: "cnauthtests@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
