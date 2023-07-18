@@ -9,7 +9,7 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
+import link from "./link.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -26,8 +26,8 @@ import shopify from "./company/shopify.png";
 import avrl from "./company/avrl.jfif";
 import ashriya from "./company/ashriya.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import instapin from "./instapin.png";
+import sellit from "./sellit.png";
 import tripguide from "./tripguide.png";
 
 export {
@@ -41,7 +41,7 @@ export {
   close,
   css,
   docker,
-  figma,
+  link,
   git,
   html,
   javascript,
@@ -56,7 +56,7 @@ export {
   shopify,
   avrl,
   ashriya,
-  carrent,
-  jobit,
+  instapin,
+  sellit,
   tripguide,
 };

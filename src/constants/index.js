@@ -18,8 +18,8 @@ import {
     avrl,
     ashriya,
     shopify,
-    carrent,
-    jobit,
+    instapin,
+    sellit,
     tripguide,
     threejs,
   } from "../assets";
@@ -168,16 +168,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Insta Pin",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web application which is a combination of Instagram and Pinterest to add, save and comment on the pins",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "sanity",
           color: "green-text-gradient",
         },
         {
@@ -185,13 +185,14 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: instapin,
+      source_code_link: "https://github.com/f4ayush/insta-images",
+      deployed_link: "https://insta-images-seven.vercel.app/",
     },
     {
-      name: "Job IT",
+      name: "Sell It",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application with a full-fledged e-commerce website features, showcasing a comprehensive product catalog and user-friendly shopping cart",
       tags: [
         {
           name: "react",
@@ -202,34 +203,22 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "node",
           color: "pink-text-gradient",
         },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
         {
-          name: "nextjs",
+          name: "material ui",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "mongodb",
           color: "green-text-gradient",
         },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
+      image: sellit,
+      source_code_link: "https://github.com/f4ayush/flipkart",
+      deployed_link: "https://flipkart-iota.vercel.app/"
+    }
   ];
   
   export { services, technologies, experiences, testimonials, projects };
