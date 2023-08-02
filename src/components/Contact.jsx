@@ -38,11 +38,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
-          from_name: form.name,
-          to_name: "Ayush Raj Anand",
-          from_email: form.email,
-          to_email: "cnauthtests@gmail.com",
-          message: form.message,
+          user_email: form.user_email,
+          user_name: form.user_name,
+          message: `${form.user_email}\n${form.user_name}\n${form.message}`
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
@@ -52,8 +50,8 @@ const Contact = () => {
           alert("Thank you. I will get back to you as soon as possible.");
 
           setForm({
-            name: "",
-            email: "",
+            user_email: "",
+            user_name: "",
             message: "",
           });
         },
@@ -86,8 +84,8 @@ const Contact = () => {
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
               type='text'
-              name='name'
-              value={form.name}
+              name='user_name'
+              value={form.user_name}
               onChange={handleChange}
               placeholder="What's your good name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
@@ -97,8 +95,8 @@ const Contact = () => {
             <span className='text-white font-medium mb-4'>Your email</span>
             <input
               type='email'
-              name='email'
-              value={form.email}
+              name='user_email'
+              value={form.user_email}
               onChange={handleChange}
               placeholder="What's your web address?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
